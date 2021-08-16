@@ -4,7 +4,6 @@ let currentEpisode = 0;
 function init() {
     loadBoard().then(result => {
         snls = result;
-        //pickRandom();
         setEpisode();
     });
 
@@ -24,7 +23,7 @@ function setListeners() {
         }
 
         if (e.key === 'ArrowLeft') {
-            if (currentEpisode + 1 <= snls.seasons.length) {
+            if (currentEpisode + 1 < snls.seasons.length) {
                 currentEpisode++;
                 setEpisode();
             }
@@ -40,8 +39,8 @@ function setEpisode() {
 
     let episode = snls.seasons[currentEpisode];
 
-    const airDate = new Date(episode.airDate);
-    let formatDate = airDate.toLocaleString('default', { month: 'long' }) + '&nbsp;' + airDate.getDay();
+    let airDate = new Date(episode.airDate);
+    let formatDate = airDate.toLocaleString('default', { month: 'long' }) + ' ' + airDate.getDate();
     if (new Date().getFullYear() != airDate.getFullYear()) {
         formatDate = formatDate + ', ' + airDate.getFullYear();// + ' (s'  + episode.season + ')';
     }
@@ -65,7 +64,7 @@ function fitFont(elm) {
     var paddingHorz = parseFloat(outer.paddingRight) + parseFloat(outer.paddingLeft);
     var paddingVert = parseFloat(outer.paddingTop) + parseFloat(outer.paddingBottom);
 
-    for (let size = 120; size > 20; size--) {
+    for (let size = 120; size > 10; size--) {
         elm.style.fontSize = size + "px";
         elm.style.lineHeight = size + "px";
 
