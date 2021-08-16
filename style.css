@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Shadows+Into+Light+Two&display=swap');
+body {
+    margin-top: 50px;
+    background-image: url('./images/cork.jpg');
+}
+
+.container {
+    width: 100%;
+}
+
+.card {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-weight: bold;
+    width: 325px;
+    height: 195px;
+    font-size: 0px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 35px;
+    box-shadow: 0px 15px 10px -15px #111;
+    text-align: center;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-overflow: clip;
+}
+
+#music, #date, #host {
+    width: min-content;
+}
+
+.date {
+    background-color: #f9f0df;
+}
+
+.host {
+    background-color: #cdeff0;
+}
+
+.music {
+    background-color: #ff76d0;
+}

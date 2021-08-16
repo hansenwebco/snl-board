@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>SNL</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function fitFont(elm) {
+
+            var outer = window.getComputedStyle(elm.parentElement);
+            console.log(elm.parentElement.className);
+            var paddingHorz = parseFloat(outer.paddingRight) + parseFloat(outer.paddingLeft);
+            var paddingVert = parseFloat(outer.paddingTop) + parseFloat(outer.paddingBottom);
+
+            for (let size = 120; size > 20; size--) {
+                elm.style.fontSize = size + "px";
+                elm.style.lineHeight = size + "px";
+
+                //console.log(elm.clientWidth,elm.parentElement.clientWidth, padding);
+
+                if (elm.clientWidth < elm.parentElement.clientWidth - paddingHorz && elm.clientHeight < elm.parentElement.clientHeight - paddingVert) {
+                    break;
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="airing">
+            <div class="card date">
+                <div id="date">April 16</div>
+            </div>
+
+            <div class="card host">
+                <div id="host">Julia Louis-Dreyfus</div>
+            </div>
+
+            <div class="card music">
+                <div id="music">Drake</div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        window.onload = function () {
+            fitFont(document.getElementById("date"));
+            fitFont(document.getElementById("host"));
+            fitFont(document.getElementById("music"));
+        };
+    </script>
+</body>
+
+</html>
