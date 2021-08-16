@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Shadows+Into+Light+Two&display=swap');
 body {
     margin-top: 50px;
-    background-image: url('./images/cork.jpg');
+    background-image: url('../images/cork.jpg');
 }
 
 .container {
