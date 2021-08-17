@@ -2,28 +2,32 @@
 
 <head>
     <title>SNL</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
     <script src="js/main.js"></script>
+    <script src="https://hammerjs.github.io/dist/hammer.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body>
+<body id="body">
 
     <div class="container">
+
         <div class="airing">
-            <div class="card date">
+            <div id="card-date" class="card date">
                 <div id="date">October 4</div>
             </div>
 
-            <div class="card host">
+            <div id="card-host" class="card host">
                 <div id="host">Anne Hathaway</div>
             </div>
 
-            <div class="card music">
+            <div id="card-music" class="card music">
                 <div id="music">The Killers</div>
             </div>
         </div>
 
     </div>
+    <div id="tag">Made by @stonedonkey a SNL fan</div>
 
     <script>
         window.onload = function () {

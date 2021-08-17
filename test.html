@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Shadows+Into+Light+Two&display=swap');
+
+        #container {
+            
+            font-family: 'Shadows Into Light Two', cursive;
+            font-weight: bold;
+            width: 325px;
+            height: 195px;
+            font-size: 0px;
+            margin: auto;
+            margin-top: 10px;
+            padding: 35px;
+            box-shadow: 0px 15px 10px -15px #111;
+            text-align: center;
+            text-transform: uppercase;
+            text-overflow: clip;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: red;
+        }
+
+        #text {
+            width:max-content;
+            font-size:9vw;
+             
+        }
+    </style>
+    <script>
+        var fontsize = 120;
+        function resize() {
+            fontsize = fontsize - 5;
+            document.getElementById("text").style.fontSize = fontsize + 'px';
+            document.getElementById("text").style.lineHeight = fontsize + 'px';
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="text">BRUCE SPRINGSTEEN & THE E STREET BAND</div>
+    </div>
+    <br /><br />
+    <button id="resize" onclick="resize();">Resize</button>
+
+
+</body>
+
+</html>
