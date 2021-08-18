@@ -6,6 +6,9 @@ function init() {
         snls = result;
         setCard();
     });
+
+    MicroModal.init();
+    //MicroModal.show('modal-1');
     setListeners();
 }
 
@@ -47,9 +50,9 @@ function setListeners() {
 
     mc.on("swipeleft swiperight swipedown doubletap", function(ev) {
   
-         if (ev.type === 'swiperight')
+         if (ev.type === 'swipeleft')
             nextEpisode();
-        else if (ev.type === 'swipeleft')
+        else if (ev.type === 'swiperight')
             prevEpisode();
         else if (ev.type === 'doubletap')
             pickRandom();

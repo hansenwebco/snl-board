@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Shadows+Into+Light+Two&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 body {
     
     background-image: url('../images/cork.jpg');
@@ -57,7 +58,20 @@ body {
     position: fixed;
     bottom:10px;
     right:8px;
-    color:white;
+    color:#ddd;
+    text-shadow: 1px 1px 1px #000;
+}
+#tag a {
+    text-decoration: none;
+    color:#fff;
+}
+
+#help {
+    width:20px;
+    height:20px;
+    position:fixed;
+    top:10px;
+    right:10px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -65,3 +79,11 @@ body {
       display: none;
     }
 }
+
+.modal {
+    display: none;
+  }
+  
+  .modal.is-open {
+    display: block;
+  }
