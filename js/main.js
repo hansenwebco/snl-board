@@ -84,12 +84,26 @@ function setListeners() {
 }
 
 function nextEpisode() {
+
+    gtag('event', 'ui_action', {
+        'event_category' : 'engagement',
+        'event_label' : 'action_next_episode',
+        'value' : 1
+      });
+
     if (currentEpisode - 1 >= 0) {
         currentEpisode--;
         setEpisode();
     }
 }
 function prevEpisode() {
+
+    gtag('event', 'ui_action', {
+        'event_category' : 'engagement',
+        'event_label' : 'action_previous_episode',
+        'value' : 1
+      });
+
     if (currentEpisode + 1 < snls.seasons.length) {
         currentEpisode++;
         setEpisode();
@@ -116,6 +130,13 @@ function setEpisode() {
 }
 
 function pickRandom() {
+
+    gtag('event', 'ui_action', {
+        'event_category' : 'engagement',
+        'event_label' : 'action_pick_random',
+        'value' : 1
+      });
+
     currentEpisode = getRandomInt(0, snls.seasons.length - 1)
     setEpisode();
 }
@@ -134,7 +155,14 @@ function fitFont(elm) {
         }
     }
 }
-
+function ShowDirections() {
+    gtag('event', 'ui_action', {
+        'event_category' : 'engagement',
+        'event_label' : 'action_show_directions',
+        'value' : 1
+      });
+    MicroModal.show('modal-1');
+}
 
 async function loadBoard() {
     const response = await fetch('./data/seasons.json');
