@@ -8,7 +8,7 @@ function init() {
     });
 
     MicroModal.init();
-    ///MicroModal.show('modal-1');
+    MicroModal.show('modal-1');
     setListeners();
 }
 
@@ -85,7 +85,7 @@ function setListeners() {
 
 function nextEpisode() {
 
-    gtag('event', 'ui_action', {
+    gtag('event', 'action_next_episode', {
         'event_category' : 'engagement',
         'event_label' : 'action_next_episode',
         'value' : 1
@@ -98,7 +98,7 @@ function nextEpisode() {
 }
 function prevEpisode() {
 
-    gtag('event', 'ui_action', {
+    gtag('event', 'action_previous_episode', {
         'event_category' : 'engagement',
         'event_label' : 'action_previous_episode',
         'value' : 1
@@ -131,7 +131,7 @@ function setEpisode() {
 
 function pickRandom() {
 
-    gtag('event', 'ui_action', {
+    gtag('event', 'action_pick_random', {
         'event_category' : 'engagement',
         'event_label' : 'action_pick_random',
         'value' : 1
@@ -156,7 +156,7 @@ function fitFont(elm) {
     }
 }
 function ShowDirections() {
-    gtag('event', 'ui_action', {
+    gtag('event', 'action_show_directions', {
         'event_category' : 'engagement',
         'event_label' : 'action_show_directions',
         'value' : 1
