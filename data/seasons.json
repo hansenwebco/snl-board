@@ -1,6 +1,14 @@
 {
     "seasons": [
       {
+        "season": 47,
+        "episode": 1,
+        "host": "TBD",
+        "musicalGuest": "TBD",
+        "airDate": "2021-10-2",
+        "id": 2
+      },      
+      {
         "season": 46,
         "episode": 20,
         "host": "Anya Taylor-Joy",
