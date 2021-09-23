@@ -2,11 +2,35 @@
     "seasons": [
       {
         "season": 47,
+        "episode": 4,
+        "host": "Jason Sudeikis",
+        "musicalGuest": "Brandi Carlile",
+        "airDate": "2021-10-23",
+        "id": 914
+      },      
+      {
+        "season": 47,
+        "episode": 3,
+        "host": "Rami Malek",
+        "musicalGuest": "Young Thug",
+        "airDate": "2021-10-16",
+        "id": 913
+      },      
+      {
+        "season": 47,
+        "episode": 2,
+        "host": "Kim Kardashian West",
+        "musicalGuest": "Halsey",
+        "airDate": "2021-10-9",
+        "id": 912
+      },                        
+      {
+        "season": 47,
         "episode": 1,
         "host": "Owen Wilson",
         "musicalGuest": "Kacey Musgraves",
         "airDate": "2021-10-2",
-        "id": 2
+        "id": 911
       },      
       {
         "season": 46,

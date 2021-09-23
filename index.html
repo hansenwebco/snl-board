@@ -32,17 +32,25 @@
 <body id="body">
   <a href="javascript:void(0);" onclick="ShowDirections();"><img src="images/help.png" id="help"></a>
   <div class="container">
-    <div class="airing">
-      <div id="card-date" class="card date">
-        <div id="date">TBD</div>
-      </div>
-      <div id="card-host" class="card host">
-        <div id="host">TBD</div>
-      </div>
-      <div id="card-music" class="card music">
-        <div id="music">TBD</div>
+    <div id="leftNav" class="leftNav col nav">
+      <span class="material-icons"><a href="javascript:void(0);" id="navPrev" onclick="prevEpisode();">chevron_left</a></span>
+    </div>
+    <div class="cards col">
+      <div class="airing">
+        <div id="card-date" class="card date">
+          <div id="date">TBD</div>
+        </div>
+        <div id="card-host" class="card host">
+          <div id="host">TBD</div>
+        </div>
+        <div id="card-music" class="card music">
+          <div id="music">TBD</div>
+        </div>
       </div>
     </div>
+    <div id="rightNav" class="rightNav col nav">
+      <span class="material-icons"><a href="javascript:void(0);" id="navNext" onclick="nextEpisode();">chevron_right</a></span>
+    </div>    
   </div>
   <div id="tag">Made by <a target="_blank" href="https://www.twitter.com/stonedonkey">@stonedonkey</a> a fan of SNL.</div>
 

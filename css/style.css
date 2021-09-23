@@ -1,17 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Shadows+Into+Light+Two&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 body {
-    
     background-image: url('../images/cork.jpg');
-    padding:0px;
-    margin:0px;
-    margin-top:40px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .container {
     width: 100%;
-    height:100%;
+    height: 100%;
+    display: flex;
 }
+
+.col {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.material-icons a {
+    font-size: 200px !important;
+    color: white !important;
+    text-decoration: none !important;
+    opacity: 0.5;
+}
+
 
 .card {
     font-family: 'Shadows Into Light Two', cursive;
@@ -25,7 +40,6 @@ body {
     box-shadow: 0px 15px 10px -15px #111;
     text-align: center;
     text-transform: uppercase;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,9 +48,7 @@ body {
 
 #music, #date, #host {
     /*width: min-content;*/
-    width:min-content;
-
-    
+    width: min-content;
 }
 
 .date {
@@ -51,39 +63,42 @@ body {
     background-color: #ff76d0;
 }
 
-
 #tag {
     font-family: sans-serif;
     font-size: 14px;
     position: fixed;
-    bottom:10px;
-    right:8px;
-    color:#ddd;
+    bottom: 10px;
+    right: 8px;
+    color: #ddd;
     text-shadow: 1px 1px 1px #000;
 }
+
 #tag a {
     text-decoration: none;
-    color:#fff;
+    color: #fff;
 }
 
 #help {
-    width:20px;
-    height:20px;
-    position:fixed;
-    top:10px;
-    right:10px;
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
 }
 
 @media screen and (max-width: 1024px) {
     #tag {
-      display: none;
+        display: none;
+    }
+    #rightNav, #leftNav {
+        display: none;
     }
 }
 
 .modal {
     display: none;
-  }
-  
-  .modal.is-open {
+}
+
+.modal.is-open {
     display: block;
-  }
+}

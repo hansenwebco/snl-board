@@ -3,18 +3,37 @@ let currentEpisode = 0;
 
 function init() {
     loadBoard().then(result => {
+
         snls = result;
+
+        // determine next episode
+        let currentDate = new Date();
+
+        let episode = snls.seasons[currentEpisode];
+        let airDate = new Date(episode.airDate + ' 00:00');
+
+        while (currentDate <= airDate) {
+            currentEpisode++;
+            episode = snls.seasons[currentEpisode];
+            airDate = new Date(episode.airDate + ' 00:00');
+        }
+        if (currentEpisode > 0) // unless we're showing out last item we subtract one
+            currentEpisode--;
+
         setCard();
     });
 
     MicroModal.init();
     MicroModal.show('modal-1');
     setListeners();
+
 }
 
+
+
 function setCard() {
-    
-    
+
+
     var height = window.innerHeight;
     var width = window.innerWidth;
 
@@ -37,33 +56,13 @@ function setCard() {
     card.style.height = height;
     card.style.width = height * (5 / 3);
 
+
     setEpisode();
 }
 
 function setListeners() {
 
-    let mc = new Hammer.Manager(document.getElementById("body"));
-    //mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
-    mc.add ( new Hammer.Swipe({ direction: Hammer.DIRECTION_HORIZONTAL }));
-    mc.add( new Hammer.Tap({ event: 'doubletap', taps: 2 }) );
-
-
-    mc.on("swipeleft swiperight swipedown doubletap", function(ev) {
-  
-         if (ev.type === 'swipeleft')
-            nextEpisode();
-        else if (ev.type === 'swiperight')
-            prevEpisode();
-        else if (ev.type === 'doubletap')
-            pickRandom();
-
-    });
-
-    window.addEventListener('orientationchange', function(event) {
-        //setCard();
-    })
-
-    window.addEventListener('resize', function() {
+    window.addEventListener('resize', function () {
         setCard();
     });
 
@@ -81,15 +80,41 @@ function setListeners() {
             pickRandom();
         }
     });
+
+    var is_touch_device = 'ontouchstart' in document.documentElement;
+    if (is_touch_device) {
+
+        let mc = new Hammer.Manager(document.getElementById("body"));
+        //mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
+        mc.add(new Hammer.Swipe({ direction: Hammer.DIRECTION_HORIZONTAL }));
+        mc.add(new Hammer.Tap({ event: 'doubletap', taps: 2 }));
+
+
+        mc.on("swipeleft swiperight swipedown doubletap", function (ev) {
+
+            if (ev.type === 'swipeleft')
+                nextEpisode();
+            else if (ev.type === 'swiperight')
+                prevEpisode();
+            else if (ev.type === 'doubletap')
+                pickRandom();
+
+        });
+
+        window.addEventListener('orientationchange', function (event) {
+            //setCard();
+        })
+    }
+
 }
 
 function nextEpisode() {
 
     gtag('event', 'action_next_episode', {
-        'event_category' : 'engagement',
-        'event_label' : 'action_next_episode',
-        'value' : 1
-      });
+        'event_category': 'engagement',
+        'event_label': 'action_next_episode',
+        'value': 1
+    });
 
     if (currentEpisode - 1 >= 0) {
         currentEpisode--;
@@ -99,10 +124,10 @@ function nextEpisode() {
 function prevEpisode() {
 
     gtag('event', 'action_previous_episode', {
-        'event_category' : 'engagement',
-        'event_label' : 'action_previous_episode',
-        'value' : 1
-      });
+        'event_category': 'engagement',
+        'event_label': 'action_previous_episode',
+        'value': 1
+    });
 
     if (currentEpisode + 1 < snls.seasons.length) {
         currentEpisode++;
@@ -114,7 +139,7 @@ function setEpisode() {
 
     let episode = snls.seasons[currentEpisode];
 
-    let airDate = new Date(episode.airDate);
+    let airDate = new Date(episode.airDate + ' 00:00');
     let formatDate = airDate.toLocaleString('default', { month: 'long' }) + ' ' + airDate.getDate();
     if (new Date().getFullYear() != airDate.getFullYear()) {
         formatDate = formatDate + ', ' + airDate.getFullYear();// + ' (s'  + episode.season + ')';
@@ -127,15 +152,30 @@ function setEpisode() {
     fitFont(document.getElementById("date"));
     fitFont(document.getElementById("host"));
     fitFont(document.getElementById("music"));
+
+    let rightNav = document.getElementById("rightNav");
+    if (currentEpisode == 0)
+        rightNav.style.visibility = "hidden";
+    else
+        rightNav.style.visibility = "visible";
+
+
+    let leftNav = document.getElementById("leftNav");
+    if (currentEpisode == snls.seasons.length-1) 
+        leftNav.style.visibility = "hidden";
+    else
+        leftNav.style.visibility = "visible";
+
+
 }
 
 function pickRandom() {
 
     gtag('event', 'action_pick_random', {
-        'event_category' : 'engagement',
-        'event_label' : 'action_pick_random',
-        'value' : 1
-      });
+        'event_category': 'engagement',
+        'event_label': 'action_pick_random',
+        'value': 1
+    });
 
     currentEpisode = getRandomInt(0, snls.seasons.length - 1)
     setEpisode();
@@ -157,10 +197,10 @@ function fitFont(elm) {
 }
 function ShowDirections() {
     gtag('event', 'action_show_directions', {
-        'event_category' : 'engagement',
-        'event_label' : 'action_show_directions',
-        'value' : 1
-      });
+        'event_category': 'engagement',
+        'event_label': 'action_show_directions',
+        'value': 1
+    });
     MicroModal.show('modal-1');
 }
 
