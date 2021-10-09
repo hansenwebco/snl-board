@@ -12,6 +12,9 @@ function init() {
         let episode = snls.seasons[currentEpisode];
         let airDate = new Date(episode.airDate + ' 00:00');
 
+        airDate.setHours(0,0,0,0);
+        currentDate.setHours(0,0,0,0);
+
         while (currentDate <= airDate) {
             currentEpisode++;
             episode = snls.seasons[currentEpisode];
@@ -24,7 +27,7 @@ function init() {
     });
 
     MicroModal.init();
-    MicroModal.show('modal-1');
+    //MicroModal.show('modal-1');
     setListeners();
 
 }
