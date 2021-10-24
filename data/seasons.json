@@ -3,6 +3,14 @@
       {
         "season": 47,
         "episode": 4,
+        "host": "Kieran Culkin",
+        "musicalGuest": "Ed Sheeran",
+        "airDate": "2021-11-6",
+        "id": 915
+      },       
+      {
+        "season": 47,
+        "episode": 4,
         "host": "Jason Sudeikis",
         "musicalGuest": "Brandi Carlile",
         "airDate": "2021-10-23",
