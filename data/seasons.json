@@ -2,7 +2,23 @@
     "seasons": [
       {
         "season": 47,
-        "episode": 4,
+        "episode": 7,
+        "host": "Simu Liu",
+        "musicalGuest": "Saweetie",
+        "airDate": "2021-11-20",
+        "id": 917
+      },  
+      {
+        "season": 47,
+        "episode": 6,
+        "host": "Jonathan Majors",
+        "musicalGuest": "Taylor Swift",
+        "airDate": "2021-11-13",
+        "id": 916
+      },        
+      {
+        "season": 47,
+        "episode": 5,
         "host": "Kieran Culkin",
         "musicalGuest": "Ed Sheeran",
         "airDate": "2021-11-6",
