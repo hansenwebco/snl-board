@@ -2,6 +2,22 @@
     "seasons": [
       {
         "season": 47,
+        "episode": 9,
+        "host": "Paul Rudd",
+        "musicalGuest": "Charlie XCX",
+        "airDate": "2021-12-18",
+        "id": 919
+      },       
+      {
+        "season": 47,
+        "episode": 8,
+        "host": "Billie Eilish",
+        "musicalGuest": "Billie Eilish",
+        "airDate": "2021-12-11",
+        "id": 918
+      }, 
+      {
+        "season": 47,
         "episode": 7,
         "host": "Simu Liu",
         "musicalGuest": "Saweetie",
