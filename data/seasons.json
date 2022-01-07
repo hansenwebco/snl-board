@@ -2,6 +2,14 @@
     "seasons": [
       {
         "season": 47,
+        "episode": 10,
+        "host": "Ariana Debose",
+        "musicalGuest": "Roddy Ricch",
+        "airDate": "2022-1-15",
+        "id": 920
+      },       
+      {
+        "season": 47,
         "episode": 9,
         "host": "Paul Rudd",
         "musicalGuest": "none",
