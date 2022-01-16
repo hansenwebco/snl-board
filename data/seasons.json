@@ -2,6 +2,14 @@
     "seasons": [
       {
         "season": 47,
+        "episode": 11,
+        "host": "Will Forte",
+        "musicalGuest": "Måneskin",
+        "airDate": "2022-1-22",
+        "id": 921
+      },        
+      {
+        "season": 47,
         "episode": 10,
         "host": "Ariana Debose",
         "musicalGuest": "Bleachers",
