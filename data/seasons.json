@@ -2,6 +2,14 @@
     "seasons": [
       {
         "season": 47,
+        "episode": 12,
+        "host": "Willem Dafoe",
+        "musicalGuest": "Katy Perry",
+        "airDate": "2022-1-29",
+        "id": 922
+      }, 
+      {
+        "season": 47,
         "episode": 11,
         "host": "Will Forte",
         "musicalGuest": "Måneskin",
