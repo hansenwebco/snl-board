@@ -1,5 +1,13 @@
 {
     "seasons": [
+     {
+        "season": 47,
+        "episode": 13,
+        "host": "John Mulaney",
+        "musicalGuest": "LCD Soundsystem",
+        "airDate": "2022-2-26",
+        "id": 923
+      }, 
       {
         "season": 47,
         "episode": 12,
