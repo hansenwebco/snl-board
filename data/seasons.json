@@ -1,6 +1,22 @@
 {
     "seasons": [
-     {
+      {
+        "season": 47,
+        "episode": 15,
+        "host": "Zoë Kravitz",
+        "musicalGuest": "Rosalía",
+        "airDate": "2022-3-12",
+        "id": 925
+      }, 
+      {
+        "season": 47,
+        "episode": 14,
+        "host": "Oscar Issac",
+        "musicalGuest": "Charlie XCX",
+        "airDate": "2022-3-5",
+        "id": 924
+      }, 
+      {
         "season": 47,
         "episode": 13,
         "host": "John Mulaney",
