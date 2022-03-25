@@ -2,6 +2,30 @@
     "seasons": [
       {
         "season": 47,
+        "episode": 17,
+        "host": "Lizzo",
+        "musicalGuest": "Lizzo",
+        "airDate": "2022-4-16",
+        "id": 928
+      },       
+      {
+        "season": 47,
+        "episode": 16,
+        "host": "Jake Gyllenhaal",
+        "musicalGuest": "Camila Cabello",
+        "airDate": "2022-4-9",
+        "id": 927
+      },       
+      {
+        "season": 47,
+        "episode": 16,
+        "host": "Jerrod Carmichael",
+        "musicalGuest": "Gunna",
+        "airDate": "2022-4-2",
+        "id": 926
+      },      
+      {
+        "season": 47,
         "episode": 15,
         "host": "Zoë Kravitz",
         "musicalGuest": "Rosalía",
