@@ -2,6 +2,14 @@
     "seasons": [
       {
         "season": 47,
+        "episode": 18,
+        "host": "Benedict Cumberbatch",
+        "musicalGuest": "Arcade Fire",
+        "airDate": "2022-5-7",
+        "id": 929
+      },        
+      {
+        "season": 47,
         "episode": 17,
         "host": "Lizzo",
         "musicalGuest": "Lizzo",
