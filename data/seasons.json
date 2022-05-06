@@ -2,6 +2,14 @@
     "seasons": [
       {
         "season": 47,
+        "episode": 19,
+        "host": "Selena Gomez",
+        "musicalGuest": "Post Malone",
+        "airDate": "2022-5-14",
+        "id": 930
+      },   
+      {
+        "season": 47,
         "episode": 18,
         "host": "Benedict Cumberbatch",
         "musicalGuest": "Arcade Fire",
