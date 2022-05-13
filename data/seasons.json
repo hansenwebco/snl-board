@@ -2,6 +2,14 @@
     "seasons": [
       {
         "season": 47,
+        "episode": 20,
+        "host": "Natasha Lyonne",
+        "musicalGuest": "Japanese Breakfast",
+        "airDate": "2022-5-21",
+        "id": 931
+      },   
+      {
+        "season": 47,
         "episode": 19,
         "host": "Selena Gomez",
         "musicalGuest": "Post Malone",
