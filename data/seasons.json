@@ -1,6 +1,30 @@
 {
     "seasons": [
       {
+        "season": 48,
+        "episode": 3,
+        "host": "Megan Thee Stallion",
+        "musicalGuest": "Megan Thee Stallion",
+        "airDate": "2022-10-15",
+        "id": 934
+      }, 
+      {
+        "season": 48,
+        "episode": 2,
+        "host": "Brendan Gleeson",
+        "musicalGuest": "Willow",
+        "airDate": "2022-10-8",
+        "id": 933
+      }, 
+      {
+        "season": 48,
+        "episode": 1,
+        "host": "Miles Teller",
+        "musicalGuest": "Kendrick Lamar",
+        "airDate": "2022-10-1",
+        "id": 932
+      },             
+      {
         "season": 47,
         "episode": 20,
         "host": "Natasha Lyonne",
