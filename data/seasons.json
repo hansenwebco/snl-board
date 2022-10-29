@@ -2,6 +2,22 @@
     "seasons": [
       {
         "season": 48,
+        "episode": 5,
+        "host": "Amy Schumer",
+        "musicalGuest": "Steve Lacy",
+        "airDate": "2022-11-5",
+        "id": 936
+      },       
+      {
+        "season": 48,
+        "episode": 4,
+        "host": "Jack Harlow",
+        "musicalGuest": "Jack Harlow",
+        "airDate": "2022-10-29",
+        "id": 935
+      },     
+      {
+        "season": 48,
         "episode": 3,
         "host": "Megan Thee Stallion",
         "musicalGuest": "Megan Thee Stallion",
