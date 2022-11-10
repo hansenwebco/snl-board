@@ -2,6 +2,14 @@
     "seasons": [
       {
         "season": 48,
+        "episode": 6,
+        "host": "Dave Chappelle",
+        "musicalGuest": "Black Star",
+        "airDate": "2022-11-5",
+        "id": 937
+      },       
+      {
+        "season": 48,
         "episode": 5,
         "host": "Amy Schumer",
         "musicalGuest": "Steve Lacy",
