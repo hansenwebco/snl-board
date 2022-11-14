@@ -2,6 +2,14 @@
     "seasons": [
       {
         "season": 48,
+        "episode": 7,
+        "host": "Keke Palmer",
+        "musicalGuest": "Sza",
+        "airDate": "2022-12-3",
+        "id": 938
+      },        
+      {
+        "season": 48,
         "episode": 6,
         "host": "Dave Chappelle",
         "musicalGuest": "Black Star",
