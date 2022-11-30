@@ -2,6 +2,22 @@
     "seasons": [
       {
         "season": 48,
+        "episode": 9,
+        "host": "Austin Butler",
+        "musicalGuest": "Yeah Yeah Yeahs",
+        "airDate": "2022-12-17",
+        "id": 940
+      },    
+      {
+        "season": 48,
+        "episode": 8,
+        "host": "Steve Martin & Martin Short",
+        "musicalGuest": "Brandi Carlile",
+        "airDate": "2022-12-10",
+        "id": 939
+      },      
+      {
+        "season": 48,
         "episode": 7,
         "host": "Keke Palmer",
         "musicalGuest": "Sza",
