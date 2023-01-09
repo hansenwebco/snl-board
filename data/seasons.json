@@ -2,6 +2,22 @@
     "seasons": [
       {
         "season": 48,
+        "episode": 11,
+        "host": "Michael B. Jordan",
+        "musicalGuest": "Lil Baby",
+        "airDate": "2023-1-28",
+        "id": 942
+      },  
+      {
+        "season": 48,
+        "episode": 10,
+        "host": "Aubrey Plaza",
+        "musicalGuest": "Sam Smith",
+        "airDate": "2023-1-21",
+        "id": 941
+      },        
+      {
+        "season": 48,
         "episode": 9,
         "host": "Austin Butler",
         "musicalGuest": "Yeah Yeah Yeahs",
