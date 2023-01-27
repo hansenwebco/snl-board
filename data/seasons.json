@@ -2,6 +2,14 @@
     "seasons": [
       {
         "season": 48,
+        "episode": 12,
+        "host": "Pedro Pascal",
+        "musicalGuest": "Coldplay",
+        "airDate": "2023-2-4",
+        "id": 943
+      },  
+      {
+        "season": 48,
         "episode": 11,
         "host": "Michael B. Jordan",
         "musicalGuest": "Lil Baby",
