@@ -2,6 +2,46 @@
     "seasons": [
       {
         "season": 48,
+        "episode": 18,
+        "host": "Ana de Armas",
+        "musicalGuest": "Karol G",
+        "airDate": "2023-4-15",
+        "id": 949
+      },  
+      {
+        "season": 48,
+        "episode": 17,
+        "host": "Molly Shannon",
+        "musicalGuest": "Jonas Brothers",
+        "airDate": "2023-4-8",
+        "id": 948
+      },       
+      {
+        "season": 48,
+        "episode": 16,
+        "host": "Quinta Brunson",
+        "musicalGuest": "Lil Yachty",
+        "airDate": "2023-4-1",
+        "id": 947
+      }, 
+      {
+        "season": 48,
+        "episode": 15,
+        "host": "Jenna Ortega",
+        "musicalGuest": "The 1975",
+        "airDate": "2023-3-11",
+        "id": 946
+      }, 
+      {
+        "season": 48,
+        "episode": 14,
+        "host": "Travis Kelce",
+        "musicalGuest": "Kelsea Ballerini",
+        "airDate": "2023-3-4",
+        "id": 945
+      },  
+      {
+        "season": 48,
         "episode": 13,
         "host": "Woody Harrelson",
         "musicalGuest": "Jack White",
