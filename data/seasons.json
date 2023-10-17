@@ -2,11 +2,27 @@
     "seasons": [
       {
         "season": 49,
+        "episode": 3,
+        "host": "Nate Bargatze",
+        "musicalGuest": "Foo Fighters",
+        "airDate": "2023-10-29",
+        "id": 925
+      }, 
+      {
+        "season": 49,
+        "episode": 2,
+        "host": "Bad Bunny",
+        "musicalGuest": "Bad Bunny",
+        "airDate": "2023-10-21",
+        "id": 951
+      }, 
+      {
+        "season": 49,
         "episode": 1,
         "host": "Pete Davidson",
         "musicalGuest": "Ice Spice",
         "airDate": "2023-10-14",
-        "id": 949
+        "id": 950
       },        
       {
         "season": 48,
