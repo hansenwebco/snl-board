@@ -2,11 +2,19 @@
     "seasons": [
       {
         "season": 49,
+        "episode": 4,
+        "host": "Timothée Chalamet",
+        "musicalGuest": "Boygenius",
+        "airDate": "2023-11-11",
+        "id": 953
+      },       
+      {
+        "season": 49,
         "episode": 3,
         "host": "Nate Bargatze",
         "musicalGuest": "Foo Fighters",
-        "airDate": "2023-10-29",
-        "id": 925
+        "airDate": "2023-10-28",
+        "id": 952
       }, 
       {
         "season": 49,

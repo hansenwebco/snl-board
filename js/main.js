@@ -143,7 +143,7 @@ function setEpisode() {
     let episode = snls.seasons[currentEpisode];
 
     let airDate = new Date(episode.airDate + ' 00:00');
-    let formatDate = airDate.toLocaleString('default', { month: 'long' }) + ' ' + airDate.getDate();
+    let formatDate = airDate.toLocaleString('default', { month: 'short' }) + ' ' + airDate.getDate();
     if (new Date().getFullYear() != airDate.getFullYear()) {
         formatDate = formatDate + ', ' + airDate.getFullYear();// + ' (s'  + episode.season + ')';
     }
