@@ -2,6 +2,14 @@
     "seasons": [
       {
         "season": 49,
+        "episode": 5,
+        "host": "Jason Momoa",
+        "musicalGuest": "Tate McRae",
+        "airDate": "2023-11-18",
+        "id": 954
+      },     
+      {
+        "season": 49,
         "episode": 4,
         "host": "Timothée Chalamet",
         "musicalGuest": "Boygenius",
