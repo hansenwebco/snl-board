@@ -2,6 +2,22 @@
     "seasons": [
       {
         "season": 49,
+        "episode": 7,
+        "host": "Kate McKinnon",
+        "musicalGuest": "Billie Eilish",
+        "airDate": "2023-12-16",
+        "id": 956
+      },   
+      {
+        "season": 49,
+        "episode": 6,
+        "host": "Adam Driver",
+        "musicalGuest": "Olivia Rodrigo",
+        "airDate": "2023-12-09",
+        "id": 955
+      },         
+      {
+        "season": 49,
         "episode": 5,
         "host": "Jason Momoa",
         "musicalGuest": "Tate McRae",
